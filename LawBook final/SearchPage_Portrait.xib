@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPage">
+            <connections>
+                <outlet property="actionbar" destination="SGo-0u-4OH" id="GCi-vq-GWl"/>
+                <outlet property="mode" destination="KmT-sy-Dtq" id="D4h-dq-RM2"/>
+                <outlet property="search" destination="mvM-zx-uxm" id="U5p-Jf-4A9"/>
+                <outlet property="select_book" destination="SxP-x6-SiP" id="O3r-TL-Qg6"/>
+                <outlet property="tableView" destination="Uon-wf-ZYt" id="8se-8d-fY8"/>
+                <outlet property="view" destination="1" id="o1J-32-FGE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-JG-UjQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headertop.png" translatesAutoresizingMaskIntoConstraints="NO" id="8k1-V2-mNO">
+                    <rect key="frame" x="20" y="20" width="280" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="r0M-5Z-cqT"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="SGo-0u-4OH">
+                    <rect key="frame" x="20" y="68" width="280" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="Jr3-yP-bms"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="جستجو" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usn-Zy-jgD">
+                    <rect key="frame" x="235" y="78" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvM-zx-uxm">
+                    <rect key="frame" x="114" y="131" width="186" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="w6q-K6-3FD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxP-x6-SiP">
+                    <rect key="frame" x="28" y="130" width="68" height="30"/>
+                    <color key="backgroundColor" red="0.7882353663444519" green="0.5215686559677124" blue="0.039215687662363052" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DIt-vx-5oL"/>
+                    </constraints>
+                    <state key="normal" title="انتخاب کتاب">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BookSelect:" destination="-1" eventType="touchUpInside" id="K2s-Ir-NPO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T37-dh-q9E">
+                    <rect key="frame" x="71" y="71" width="35" height="35"/>
+                    <state key="normal" image="help1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="help:" destination="-1" eventType="touchUpInside" id="e1j-Fh-zgj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98z-fV-Ka1">
+                    <rect key="frame" x="114" y="71" width="35" height="35"/>
+                    <state key="normal" image="home1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="home:" destination="-1" eventType="touchUpInside" id="0lh-jK-ifm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTY-Zu-XJV">
+                    <rect key="frame" x="28" y="71" width="35" height="35"/>
+                    <state key="normal" image="back1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="TFY-Sz-aPS"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KmT-sy-Dtq">
+                    <rect key="frame" x="114" y="169" width="186" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="DnQ-vo-dG3"/>
+                    </constraints>
+                    <segments>
+                        <segment title="جستجو ترکیبی"/>
+                        <segment title="جستجو معمولی"/>
+                    </segments>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="mode_change" destination="-1" eventType="valueChanged" id="GgZ-5e-DuP"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Uon-wf-ZYt">
+                    <rect key="frame" x="11" y="205" width="298" height="355"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5rr-G0-lOu"/>
+                        <outlet property="delegate" destination="-1" id="L2D-MJ-h5W"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SxP-x6-SiP" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="28" id="11g-Rw-yfR"/>
+                <constraint firstItem="Uon-wf-ZYt" firstAttribute="top" secondItem="KmT-sy-Dtq" secondAttribute="bottom" constant="8" id="2DP-Tg-47u"/>
+                <constraint firstAttribute="bottom" secondItem="Uon-wf-ZYt" secondAttribute="bottom" constant="8" id="4mv-F2-yuY"/>
+                <constraint firstItem="8k1-V2-mNO" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="4nc-Uv-tSk"/>
+                <constraint firstItem="SGo-0u-4OH" firstAttribute="top" secondItem="8k1-V2-mNO" secondAttribute="bottom" constant="8" id="6Il-jS-Cyo"/>
+                <constraint firstItem="KmT-sy-Dtq" firstAttribute="top" secondItem="mvM-zx-uxm" secondAttribute="bottom" constant="8" id="Dir-m5-BMj"/>
+                <constraint firstItem="SGo-0u-4OH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="HxE-EM-EE2"/>
+                <constraint firstItem="mvM-zx-uxm" firstAttribute="leading" secondItem="SxP-x6-SiP" secondAttribute="trailing" constant="18" id="K8y-aJ-zLH"/>
+                <constraint firstItem="FmO-JG-UjQ" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="LHh-8l-u1d"/>
+                <constraint firstAttribute="trailing" secondItem="FmO-JG-UjQ" secondAttribute="trailing" id="OyE-Xz-svq"/>
+                <constraint firstAttribute="trailing" secondItem="KmT-sy-Dtq" secondAttribute="trailing" constant="20" id="UbC-Nf-qdh"/>
+                <constraint firstAttribute="trailing" secondItem="Uon-wf-ZYt" secondAttribute="trailing" constant="12" id="VSi-48-cDk"/>
+                <constraint firstItem="FmO-JG-UjQ" firstAttribute="top" secondItem="1" secondAttribute="top" id="W6D-PX-nHO"/>
+                <constraint firstItem="SxP-x6-SiP" firstAttribute="top" secondItem="SGo-0u-4OH" secondAttribute="bottom" constant="21" id="Xz0-sG-yBl"/>
+                <constraint firstItem="8k1-V2-mNO" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="dNh-8G-Tlh"/>
+                <constraint firstAttribute="trailing" secondItem="8k1-V2-mNO" secondAttribute="trailing" constant="20" id="eFy-I4-HlL"/>
+                <constraint firstItem="Uon-wf-ZYt" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="10" id="fpm-YH-pEe"/>
+                <constraint firstAttribute="bottom" secondItem="FmO-JG-UjQ" secondAttribute="bottom" id="hWO-ZS-phY"/>
+                <constraint firstAttribute="trailing" secondItem="SGo-0u-4OH" secondAttribute="trailing" constant="20" id="mqb-Pf-eMU"/>
+                <constraint firstItem="mvM-zx-uxm" firstAttribute="leading" secondItem="SxP-x6-SiP" secondAttribute="trailing" constant="18" id="oUO-4A-jFe"/>
+                <constraint firstAttribute="trailing" secondItem="mvM-zx-uxm" secondAttribute="trailing" constant="20" id="vWe-E6-q6O"/>
+                <constraint firstItem="mvM-zx-uxm" firstAttribute="top" secondItem="SGo-0u-4OH" secondAttribute="bottom" constant="22" id="xFn-9x-TBU"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back1.png" width="144" height="144"/>
+        <image name="bk.jpg" width="800" height="1280"/>
+        <image name="headertop.png" width="800" height="116"/>
+        <image name="help1.png" width="144" height="144"/>
+        <image name="home1.png" width="144" height="144"/>
+        <image name="menu_bg.png" width="800" height="117"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

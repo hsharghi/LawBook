@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="center" reuseIdentifier="CollectionCellLibrary" id="B29-BA-7jf" customClass="CollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="112" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.30000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="fpP-J3-GzO">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="200"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="aXz-XW-J9h">
+                        <rect key="frame" x="6" y="10" width="100" height="123"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luu-T5-1ME">
+                        <rect key="frame" x="6" y="153" width="100" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="lJU-qH-1ah">
+                        <rect key="frame" x="38" y="81" width="37" height="37"/>
+                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRd-MV-XoZ" customClass="DALabeledCircularProgressView">
+                        <rect key="frame" x="6" y="50" width="100" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="download.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-6b-zyR">
+                                <rect key="frame" x="25" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="88S-df-lZ7"/>
+                                    <constraint firstAttribute="width" constant="50" id="qcI-ox-u5F"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Gsv-6b-zyR" secondAttribute="centerX" id="2ej-mF-Pki"/>
+                            <constraint firstAttribute="centerY" secondItem="Gsv-6b-zyR" secondAttribute="centerY" id="LNq-uy-Q73"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-7H-GoX" customClass="DALabeledCircularProgressView">
+                        <rect key="frame" x="6" y="50" width="100" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fpP-J3-GzO" secondAttribute="trailing" id="4Of-3h-MD2"/>
+                <constraint firstAttribute="bottom" secondItem="fpP-J3-GzO" secondAttribute="bottom" id="8iQ-r6-QjG"/>
+                <constraint firstItem="Luu-T5-1ME" firstAttribute="leading" secondItem="B29-BA-7jf" secondAttribute="leading" constant="6" id="9L9-ek-6fH"/>
+                <constraint firstAttribute="centerY" secondItem="NRd-MV-XoZ" secondAttribute="centerY" id="CKQ-oe-2K5"/>
+                <constraint firstAttribute="trailing" secondItem="aXz-XW-J9h" secondAttribute="trailing" constant="6" id="J5B-eO-A65"/>
+                <constraint firstAttribute="centerX" secondItem="uWJ-7H-GoX" secondAttribute="centerX" id="KYR-J3-J4w"/>
+                <constraint firstAttribute="centerX" secondItem="lJU-qH-1ah" secondAttribute="centerX" id="Rku-Vb-aXU"/>
+                <constraint firstItem="aXz-XW-J9h" firstAttribute="top" secondItem="B29-BA-7jf" secondAttribute="top" constant="10" id="bam-UC-OBu"/>
+                <constraint firstItem="aXz-XW-J9h" firstAttribute="leading" secondItem="B29-BA-7jf" secondAttribute="leading" constant="6" id="cgu-0a-4Zp"/>
+                <constraint firstAttribute="trailing" secondItem="Luu-T5-1ME" secondAttribute="trailing" constant="6" id="gnq-b2-kgz"/>
+                <constraint firstItem="fpP-J3-GzO" firstAttribute="leading" secondItem="B29-BA-7jf" secondAttribute="leading" id="mNP-f2-BTx"/>
+                <constraint firstAttribute="centerY" secondItem="uWJ-7H-GoX" secondAttribute="centerY" id="nbi-BQ-u7q"/>
+                <constraint firstAttribute="bottom" secondItem="Luu-T5-1ME" secondAttribute="bottom" constant="13" id="vcc-zY-x6u"/>
+                <constraint firstAttribute="centerX" secondItem="NRd-MV-XoZ" secondAttribute="centerX" id="wMV-gh-4eg"/>
+                <constraint firstAttribute="centerY" secondItem="lJU-qH-1ah" secondAttribute="centerY" id="yl1-Vn-bh5"/>
+                <constraint firstItem="fpP-J3-GzO" firstAttribute="top" secondItem="B29-BA-7jf" secondAttribute="top" id="yy4-jR-ZGw"/>
+                <constraint firstItem="Luu-T5-1ME" firstAttribute="top" secondItem="aXz-XW-J9h" secondAttribute="bottom" constant="20" id="zJ9-Gh-UJ8"/>
+            </constraints>
+            <size key="customSize" width="273" height="346"/>
+            <connections>
+                <outlet property="container" destination="fpP-J3-GzO" id="aT6-uu-sum"/>
+                <outlet property="dl" destination="Gsv-6b-zyR" id="oY2-yt-SPG"/>
+                <outlet property="img" destination="aXz-XW-J9h" id="a59-DL-pPH"/>
+                <outlet property="indicator" destination="lJU-qH-1ah" id="tOi-c2-gV0"/>
+                <outlet property="labeledProgressView" destination="uWJ-7H-GoX" id="krd-Xh-Jcj"/>
+                <outlet property="name" destination="Luu-T5-1ME" id="Tsj-7t-CVb"/>
+                <outlet property="price" destination="Luu-T5-1ME" id="F6H-rW-ygx"/>
+                <outlet property="tempProgressView" destination="NRd-MV-XoZ" id="hjR-Ew-ZUd"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="black_bg.png" width="5" height="5"/>
+        <image name="download.png" width="40" height="40"/>
+        <image name="share.png" width="192" height="192"/>
+    </resources>
+</document>

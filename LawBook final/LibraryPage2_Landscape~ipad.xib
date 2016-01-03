@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LibraryPage2">
+            <connections>
+                <outlet property="actionbar" destination="eGo-MS-RUL" id="QDB-mm-ZQB"/>
+                <outlet property="header" destination="Nu7-N7-yk4" id="8Vk-wH-bDq"/>
+                <outlet property="tableView" destination="wqE-V2-vSM" id="ir1-KR-WqQ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-Lp-ooj">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="204" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg222.png" translatesAutoresizingMaskIntoConstraints="NO" id="kiL-ID-o9S">
+                    <rect key="frame" x="637" y="0.0" width="387" height="768"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="DlL-Wv-5X9"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="KxV-h5-q8x"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="SgU-Wh-fce"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="Sy0-GN-Vce"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="Wm7-Mg-LxZ"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="bGJ-aU-nR5"/>
+                        <constraint firstAttribute="width" constant="387" id="cil-tF-0nX"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="jLq-OG-xkQ"/>
+                        <constraint firstAttribute="height" constant="768" id="pIu-Lq-AjG"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="slp-MG-Itt"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="201" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eGo-MS-RUL">
+                    <rect key="frame" x="20" y="20" width="586" height="61"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="9Pt-5E-pON"/>
+                        <constraint firstAttribute="width" constant="586" id="CXj-cR-Ep1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="203" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="کتابخانه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-N7-yk4">
+                    <rect key="frame" x="35" y="33" width="550" height="36"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="IG7-z6-8Ta"/>
+                        <constraint firstAttribute="width" constant="550" id="epl-58-DjQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-Ib-zC8">
+                    <rect key="frame" x="661" y="367" width="70" height="70"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="2UB-Hf-I1K"/>
+                        <constraint firstAttribute="height" constant="70" id="Eqo-9C-SN8"/>
+                    </constraints>
+                    <state key="normal" image="home.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="home:" destination="-1" eventType="touchUpInside" id="u91-3g-BZS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1d-VR-ocb">
+                    <rect key="frame" x="658" y="289" width="70" height="70"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="QM3-Wb-mfY"/>
+                        <constraint firstAttribute="width" constant="70" id="aLb-mI-Oii"/>
+                    </constraints>
+                    <state key="normal" image="back.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="97w-lJ-xul"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCz-0D-FWz">
+                    <rect key="frame" x="655" y="448" width="70" height="70"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Npa-sh-hPN"/>
+                        <constraint firstAttribute="height" constant="70" id="hNq-5x-vUi"/>
+                    </constraints>
+                    <state key="normal" image="search.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="search:" destination="-1" eventType="touchUpInside" id="A7R-G7-HnU"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" tag="202" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wqE-V2-vSM">
+                    <rect key="frame" x="20" y="89" width="586" height="659"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="tDB-oJ-FOc"/>
+                        <outlet property="delegate" destination="-1" id="kse-L3-dQm"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x75-FW-0S3">
+                    <rect key="frame" x="632" y="665" width="70" height="70"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="HiM-a4-pHO"/>
+                        <constraint firstAttribute="height" constant="70" id="obb-ew-aY1"/>
+                    </constraints>
+                    <state key="normal" image="hide.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hidePane:" destination="-1" eventType="touchUpInside" id="bUM-6d-uxS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lCz-0D-FWz" secondAttribute="trailing" constant="299" id="23E-PD-Gd7"/>
+                <constraint firstItem="9bM-Ib-zC8" firstAttribute="top" secondItem="Y1d-VR-ocb" secondAttribute="bottom" constant="8" id="2Bx-J1-7nr"/>
+                <constraint firstAttribute="trailing" secondItem="kiL-ID-o9S" secondAttribute="trailing" id="85z-4K-mGh"/>
+                <constraint firstItem="lCz-0D-FWz" firstAttribute="top" secondItem="9bM-Ib-zC8" secondAttribute="bottom" constant="11" id="Rd8-rc-a40"/>
+                <constraint firstItem="Y1d-VR-ocb" firstAttribute="height" secondItem="9bM-Ib-zC8" secondAttribute="height" id="gQ9-Fj-QfL"/>
+                <constraint firstItem="Y1d-VR-ocb" firstAttribute="width" secondItem="lCz-0D-FWz" secondAttribute="width" id="jwY-au-u0d"/>
+                <constraint firstAttribute="bottom" secondItem="kiL-ID-o9S" secondAttribute="bottom" id="oEL-rZ-Ncy"/>
+                <constraint firstItem="Y1d-VR-ocb" firstAttribute="width" secondItem="9bM-Ib-zC8" secondAttribute="width" id="t6D-y5-bnt"/>
+                <constraint firstItem="kiL-ID-o9S" firstAttribute="top" secondItem="1" secondAttribute="top" id="xc8-Bl-07C"/>
+                <constraint firstItem="Y1d-VR-ocb" firstAttribute="height" secondItem="lCz-0D-FWz" secondAttribute="height" id="xdf-AP-piv"/>
+                <constraint firstAttribute="trailing" secondItem="9bM-Ib-zC8" secondAttribute="trailing" constant="293" id="yV5-TY-3vM"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="192" height="192"/>
+        <image name="bg222.png" width="933" height="1800"/>
+        <image name="bk.jpg" width="800" height="1280"/>
+        <image name="hide.png" width="192" height="192"/>
+        <image name="home.png" width="192" height="192"/>
+        <image name="menu_bg.png" width="800" height="117"/>
+        <image name="search.png" width="192" height="192"/>
+    </resources>
+</document>

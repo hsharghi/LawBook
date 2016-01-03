@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopPage1">
+            <connections>
+                <outlet property="actionbar" destination="eGo-MS-RUL" id="utg-Sv-11o"/>
+                <outlet property="tableView" destination="FCl-Zk-VyQ" id="YKy-eC-aAZ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="BSA-Lp-ooj">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg222.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uzq-3O-7L7">
+                    <rect key="frame" x="637" y="0.0" width="387" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="A9Y-VG-83q"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="MAa-6f-NiO"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="RIT-JL-eEj"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="YpB-mA-Cm6"/>
+                        <constraint firstAttribute="width" constant="387" id="bTR-gn-9e6"/>
+                        <constraint firstAttribute="height" constant="768" id="hLa-KL-jm6"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="rc4-gD-26z"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="svr-cM-OBz"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="uE8-xk-UNv"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="zoW-VT-Bil"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="menu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eGo-MS-RUL">
+                    <rect key="frame" x="20" y="20" width="595" height="61"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="9Pt-5E-pON"/>
+                        <constraint firstAttribute="width" constant="595" id="CXj-cR-Ep1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="فروشگاه کتاب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-N7-yk4">
+                    <rect key="frame" x="20" y="33" width="573" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-xO-Uba">
+                    <rect key="frame" x="661" y="391" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="iNH-BY-gkq"/>
+                        <constraint firstAttribute="width" constant="70" id="jwh-6d-z2S"/>
+                    </constraints>
+                    <state key="normal" image="home.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="home:" destination="-1" eventType="touchUpInside" id="A7t-GP-Ik6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-Ib-zC8">
+                    <rect key="frame" x="661" y="313" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="2xV-wN-MVC"/>
+                        <constraint firstAttribute="width" constant="70" id="N1m-ms-Bec"/>
+                    </constraints>
+                    <state key="normal" image="back.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="nSy-gw-2D6"/>
+                    </connections>
+                </button>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="108" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FCl-Zk-VyQ">
+                    <rect key="frame" x="20" y="89" width="595" height="659"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7di-OL-wHh"/>
+                        <outlet property="delegate" destination="-1" id="eFg-HT-Dz0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Uzq-3O-7L7" secondAttribute="bottom" id="7LK-UP-UUw"/>
+                <constraint firstItem="Nu7-N7-yk4" firstAttribute="top" secondItem="1" secondAttribute="top" constant="33" id="7cX-Md-R6G"/>
+                <constraint firstAttribute="trailing" secondItem="fuc-xO-Uba" secondAttribute="trailing" constant="293" id="FIX-Uv-lH9"/>
+                <constraint firstItem="Nu7-N7-yk4" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Kz3-3x-QmZ"/>
+                <constraint firstItem="fuc-xO-Uba" firstAttribute="width" secondItem="9bM-Ib-zC8" secondAttribute="width" id="SUp-de-uKF"/>
+                <constraint firstItem="9bM-Ib-zC8" firstAttribute="top" secondItem="1" secondAttribute="top" constant="313" id="Z3i-C5-QcY"/>
+                <constraint firstItem="FCl-Zk-VyQ" firstAttribute="top" secondItem="Nu7-N7-yk4" secondAttribute="bottom" constant="20" id="c2y-x9-o7K"/>
+                <constraint firstItem="fuc-xO-Uba" firstAttribute="top" secondItem="9bM-Ib-zC8" secondAttribute="bottom" constant="8" id="cBf-mP-UBZ"/>
+                <constraint firstItem="Uzq-3O-7L7" firstAttribute="top" secondItem="1" secondAttribute="top" id="eBp-mN-oVt"/>
+                <constraint firstAttribute="trailing" secondItem="Uzq-3O-7L7" secondAttribute="trailing" id="fW2-a7-b8l"/>
+                <constraint firstItem="fuc-xO-Uba" firstAttribute="height" secondItem="9bM-Ib-zC8" secondAttribute="height" id="jo8-pu-VAS"/>
+                <constraint firstAttribute="bottom" secondItem="fuc-xO-Uba" secondAttribute="bottom" constant="307" id="xHg-cv-loT"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back.png" width="64" height="64"/>
+        <image name="bg222.png" width="933" height="1800"/>
+        <image name="bk.jpg" width="800" height="1280"/>
+        <image name="home.png" width="96" height="96"/>
+        <image name="menu_bg.png" width="800" height="117"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookListPage">
+            <connections>
+                <outlet property="tableView" destination="UQA-yC-u5K" id="deN-m7-Q94"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="لیست کتابها" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-ya-78T">
+                    <rect key="frame" x="20" y="42" width="271" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5p-d5-gws">
+                    <rect key="frame" x="20" y="72" width="280" height="2"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgB-Jq-ow3">
+                    <rect key="frame" x="20" y="430" width="280" height="30"/>
+                    <color key="backgroundColor" red="0.66884566329999995" green="0.59307960739999999" blue="0.32471753380000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7hx-Al-jNq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="tintColor" red="0.64327566960000004" green="0.43281395189999999" blue="0.22075039639999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="انتخاب">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="357-D0-8s2"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UQA-yC-u5K">
+                    <rect key="frame" x="20" y="82" width="280" height="340"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.99698120771734389" green="0.99995760990439542" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GZa-6B-LUR"/>
+                        <outlet property="delegate" destination="-1" id="gLw-Tp-N2I"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.65351961096938771" green="0.43970636355117704" blue="0.22426576973513696" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="UQA-yC-u5K" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="2eQ-9x-8MC"/>
+                <constraint firstAttribute="bottom" secondItem="JgB-Jq-ow3" secondAttribute="bottom" constant="20" id="73a-rG-ipf"/>
+                <constraint firstItem="UQA-yC-u5K" firstAttribute="top" secondItem="f5p-d5-gws" secondAttribute="bottom" constant="8" id="BO3-N0-qNN"/>
+                <constraint firstAttribute="trailing" secondItem="JgB-Jq-ow3" secondAttribute="trailing" constant="20" id="HFn-NE-ZP6"/>
+                <constraint firstItem="2Rq-ya-78T" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="YEI-qC-fjW"/>
+                <constraint firstItem="2Rq-ya-78T" firstAttribute="top" secondItem="1" secondAttribute="top" constant="42" id="gfJ-r4-6D6"/>
+                <constraint firstAttribute="trailing" secondItem="UQA-yC-u5K" secondAttribute="trailing" constant="20" id="hrj-TC-WZF"/>
+                <constraint firstAttribute="trailing" secondItem="2Rq-ya-78T" secondAttribute="trailing" constant="29" id="oK4-fE-V2W"/>
+                <constraint firstItem="JgB-Jq-ow3" firstAttribute="top" secondItem="UQA-yC-u5K" secondAttribute="bottom" constant="8" id="rTT-dx-qWe"/>
+                <constraint firstItem="JgB-Jq-ow3" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="rbt-xS-Fne"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <view contentMode="scaleToFill" id="zVL-7Y-XgP">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="443"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="0.65351961096938771" green="0.43970636355117704" blue="0.22426576973513696" alpha="1" colorSpace="calibratedRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

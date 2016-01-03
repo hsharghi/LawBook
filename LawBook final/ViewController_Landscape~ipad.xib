@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xOE-Ty-PxS">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bg222.png" translatesAutoresizingMaskIntoConstraints="NO" id="ibJ-E8-rlb">
+                    <rect key="frame" x="637" y="0.0" width="387" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="8cU-JV-aol"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="EeX-0C-T5V"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="387" id="JrH-ln-Vog"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="197" id="XUT-pd-crZ"/>
+                        <constraint firstAttribute="width" constant="387" id="bZ7-44-zlQ"/>
+                        <constraint firstAttribute="height" constant="768" id="tNg-km-tCZ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="320" id="u8l-82-F5W"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="768" id="wDu-vm-utc"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwo-x9-2Fh" userLabel="librarybtn">
+                    <rect key="frame" x="223" y="294" width="180" height="180"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="Gqq-E4-Vxp"/>
+                        <constraint firstAttribute="height" constant="180" id="V5Y-6B-yud"/>
+                    </constraints>
+                    <state key="normal" image="mnu1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Library:" destination="-1" eventType="touchUpInside" id="CqM-yY-w6E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JB-Mo-VH8" userLabel="aboutbtn">
+                    <rect key="frame" x="258" y="524" width="110" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="3Fc-ak-1kl"/>
+                        <constraint firstAttribute="height" constant="110" id="OKd-ET-ohb"/>
+                    </constraints>
+                    <state key="normal" image="mnu4.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="About:" destination="-1" eventType="touchUpInside" id="VHi-Aq-Ane"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcy-Lf-nsI" userLabel="searchbtn">
+                    <rect key="frame" x="259" y="135" width="110" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="7kh-Xp-78n"/>
+                        <constraint firstAttribute="height" constant="110" id="zZz-XJ-drd"/>
+                    </constraints>
+                    <state key="normal" image="mnu3.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Search:" destination="-1" eventType="touchUpInside" id="x5H-8r-LaO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qiu-98-dc9" userLabel="chatbtn">
+                    <rect key="frame" x="453" y="329" width="110" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="pZB-rf-37b"/>
+                        <constraint firstAttribute="height" constant="110" id="xD8-t5-akF"/>
+                    </constraints>
+                    <state key="normal" image="mnu2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Chat:" destination="-1" eventType="touchUpInside" id="1vP-yt-Er3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJw-PR-16g" userLabel="shopbookbtn">
+                    <rect key="frame" x="63" y="329" width="110" height="110"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="UIX-Jl-0rC"/>
+                        <constraint firstAttribute="width" constant="110" id="hAU-8K-W3U"/>
+                    </constraints>
+                    <state key="normal" image="mnu5.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Shop:" destination="-1" eventType="touchUpInside" id="P2O-K2-D9k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="xOE-Ty-PxS" firstAttribute="top" secondItem="1" secondAttribute="top" id="1HS-s3-Rn4"/>
+                <constraint firstItem="Bwo-x9-2Fh" firstAttribute="leading" secondItem="cJw-PR-16g" secondAttribute="trailing" constant="50" id="3Nl-fX-fTl"/>
+                <constraint firstItem="Bwo-x9-2Fh" firstAttribute="top" secondItem="xcy-Lf-nsI" secondAttribute="bottom" constant="49" id="Dim-M0-kzw"/>
+                <constraint firstItem="Qiu-98-dc9" firstAttribute="leading" secondItem="Bwo-x9-2Fh" secondAttribute="trailing" constant="50" id="Dui-MP-rIl"/>
+                <constraint firstItem="Qiu-98-dc9" firstAttribute="leading" secondItem="Bwo-x9-2Fh" secondAttribute="trailing" constant="50" id="FWL-WP-h76"/>
+                <constraint firstAttribute="trailing" secondItem="xOE-Ty-PxS" secondAttribute="trailing" id="GpP-Dv-OCX"/>
+                <constraint firstItem="xOE-Ty-PxS" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="LjZ-TQ-H3x"/>
+                <constraint firstItem="5JB-Mo-VH8" firstAttribute="top" secondItem="Bwo-x9-2Fh" secondAttribute="bottom" constant="50" id="R3p-as-qX3"/>
+                <constraint firstItem="xOE-Ty-PxS" firstAttribute="top" secondItem="1" secondAttribute="top" id="SWJ-II-X7C"/>
+                <constraint firstAttribute="trailing" secondItem="xOE-Ty-PxS" secondAttribute="trailing" id="ToK-uN-FtD"/>
+                <constraint firstAttribute="bottom" secondItem="xOE-Ty-PxS" secondAttribute="bottom" id="VvF-Y5-RSz"/>
+                <constraint firstItem="xOE-Ty-PxS" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="d3k-Yu-rpT"/>
+                <constraint firstAttribute="bottom" secondItem="xOE-Ty-PxS" secondAttribute="bottom" id="jhZ-iT-gtN"/>
+                <constraint firstItem="Bwo-x9-2Fh" firstAttribute="leading" secondItem="cJw-PR-16g" secondAttribute="trailing" constant="50" id="py3-QA-w3F"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg222.png" width="933" height="1500"/>
+        <image name="bk.jpg" width="800" height="1280"/>
+        <image name="mnu1.png" width="267" height="269"/>
+        <image name="mnu2.png" width="267" height="269"/>
+        <image name="mnu3.png" width="267" height="269"/>
+        <image name="mnu4.png" width="267" height="269"/>
+        <image name="mnu5.png" width="267" height="269"/>
+    </resources>
+</document>

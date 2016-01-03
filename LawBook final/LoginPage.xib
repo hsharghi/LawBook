@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginPage">
+            <connections>
+                <outlet property="Username_Input" destination="Zq2-JX-28j" id="DZJ-2a-JY7"/>
+                <outlet property="container" destination="zVL-7Y-XgP" id="RWJ-sQ-RUb"/>
+                <outlet property="login_btn" destination="kdd-Q5-xht" id="xTk-dX-2qf"/>
+                <outlet property="register_btn" destination="JgB-Jq-ow3" id="hIF-O7-0VH"/>
+                <outlet property="username" destination="Zq2-JX-28j" id="rAe-lf-3nU"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="238"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVL-7Y-XgP">
+                    <rect key="frame" x="2" y="2" width="267" height="234"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ورود" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-ya-78T">
+                            <rect key="frame" x="205" y="17" width="42" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="نام کاربری" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbh-3Q-lTk">
+                            <rect key="frame" x="170" y="66" width="86" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f5p-d5-gws">
+                            <rect key="frame" x="10" y="47" width="247" height="2"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zq2-JX-28j">
+                            <rect key="frame" x="10" y="96" width="247" height="30"/>
+                            <color key="backgroundColor" red="0.52108577806122447" green="0.35060115828761174" blue="0.17881896909197315" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdd-Q5-xht">
+                            <rect key="frame" x="10" y="134" width="247" height="30"/>
+                            <color key="backgroundColor" red="0.66884566326530615" green="0.59307960738793775" blue="0.32471753378574275" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.64327566960000004" green="0.43281395189999999" blue="0.22075039639999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="ارسال">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="send:" destination="-1" eventType="touchUpInside" id="U7y-zb-1K8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgB-Jq-ow3">
+                            <rect key="frame" x="9" y="172" width="247" height="30"/>
+                            <color key="backgroundColor" red="0.66884566329999995" green="0.59307960739999999" blue="0.32471753380000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="tintColor" red="0.64327566960000004" green="0.43281395189999999" blue="0.22075039639999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="ثبت نام">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Register:" destination="-1" eventType="touchUpInside" id="Kaf-o8-yod"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.65351961096938771" green="0.43970636355117704" blue="0.22426576973513696" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zVL-7Y-XgP" firstAttribute="top" secondItem="1" secondAttribute="top" constant="2" id="EN6-jk-Jrm"/>
+                <constraint firstAttribute="trailing" secondItem="zVL-7Y-XgP" secondAttribute="trailing" constant="2" id="FS8-ev-Ssl"/>
+                <constraint firstItem="zVL-7Y-XgP" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="2" id="gSy-al-KKN"/>
+                <constraint firstAttribute="bottom" secondItem="zVL-7Y-XgP" secondAttribute="bottom" constant="2" id="nAG-0e-VLl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

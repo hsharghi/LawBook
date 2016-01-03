@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="aboutbtn" destination="i82-5v-khM" id="Usu-ih-2j2"/>
+                <outlet property="shopbookbtn" destination="del-9Q-oMG" id="MGB-eH-eus"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jfS-cn-kY8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk1.png" translatesAutoresizingMaskIntoConstraints="NO" id="zTs-q1-Ldp">
+                    <rect key="frame" x="53" y="0.0" width="91" height="169"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="169" id="idD-cj-MZP"/>
+                        <constraint firstAttribute="width" constant="91" id="lbE-op-EA3"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bk3.png" translatesAutoresizingMaskIntoConstraints="NO" id="WER-PC-WNa">
+                    <rect key="frame" x="0.0" y="378" width="211" height="190"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="p6S-FB-y0r"/>
+                        <constraint firstAttribute="width" constant="211" id="sWL-tt-0Ct"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg33.png" translatesAutoresizingMaskIntoConstraints="NO" id="wSX-Vj-HRI">
+                    <rect key="frame" x="211" y="0.0" width="109" height="568"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="83O-3k-dTT"/>
+                        <constraint firstAttribute="height" constant="568" id="Vfn-xf-QlB"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Jh-g7-u86">
+                    <rect key="frame" x="-2" y="142" width="202" height="274"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bk2.png" translatesAutoresizingMaskIntoConstraints="NO" id="IV5-m5-YrS">
+                            <rect key="frame" x="3" y="72" width="196" height="129"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="129" id="96u-vd-eDl"/>
+                                <constraint firstAttribute="width" constant="196" id="fcP-ha-b4x"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="IV5-m5-YrS" secondAttribute="centerY" id="Oqz-lv-oGS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWo-Yr-TUd" userLabel="shopbookbtn">
+                    <rect key="frame" x="220" y="176" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="kRO-IB-g9v"/>
+                        <constraint firstAttribute="width" constant="90" id="o7f-rW-6PG"/>
+                    </constraints>
+                    <state key="normal" image="mnu5.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Shop:" destination="-1" eventType="touchUpInside" id="0cL-dY-UBx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdG-VL-TXi" userLabel="chatbtn">
+                    <rect key="frame" x="220" y="274" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="kmm-zc-hBh"/>
+                        <constraint firstAttribute="width" constant="90" id="lIs-Qb-QSJ"/>
+                    </constraints>
+                    <state key="normal" image="mnu2.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Chat:" destination="-1" eventType="touchUpInside" id="fHe-JX-lhS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="del-9Q-oMG" userLabel="searchbtn">
+                    <rect key="frame" x="220" y="372" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="7vm-BI-wIq"/>
+                        <constraint firstAttribute="height" constant="90" id="xc7-7b-00j"/>
+                    </constraints>
+                    <state key="normal" image="mnu3.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Search:" destination="-1" eventType="touchUpInside" id="dRr-4H-sdn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i82-5v-khM" userLabel="aboutbtn">
+                    <rect key="frame" x="220" y="470" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="Sls-QO-3E6"/>
+                        <constraint firstAttribute="height" constant="90" id="amv-ax-53y"/>
+                    </constraints>
+                    <state key="normal" image="mnu4.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="About:" destination="-1" eventType="touchUpInside" id="jra-XU-yc2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqP-wu-GfN" userLabel="librarybtn">
+                    <rect key="frame" x="220" y="78" width="90" height="90"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="6uW-HQ-sPh"/>
+                        <constraint firstAttribute="width" constant="90" id="cYD-2a-Nwd"/>
+                    </constraints>
+                    <state key="normal" image="mnu1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Library:" destination="-1" eventType="touchUpInside" id="cHJ-97-cBF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wSX-Vj-HRI" firstAttribute="top" secondItem="1" secondAttribute="top" id="00j-QW-ikC"/>
+                <constraint firstItem="jfS-cn-kY8" firstAttribute="top" secondItem="1" secondAttribute="top" id="0UG-Zz-dlX"/>
+                <constraint firstAttribute="bottom" secondItem="del-9Q-oMG" secondAttribute="centerY" multiplier="6:4" id="2Sr-5u-uoG"/>
+                <constraint firstAttribute="trailing" secondItem="jfS-cn-kY8" secondAttribute="trailing" id="3XC-y3-KMF"/>
+                <constraint firstItem="WER-PC-WNa" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="3rx-Ui-EeS"/>
+                <constraint firstItem="zTs-q1-Ldp" firstAttribute="top" secondItem="1" secondAttribute="top" id="5Fw-k9-2MO"/>
+                <constraint firstAttribute="bottom" secondItem="rqP-wu-GfN" secondAttribute="centerY" multiplier="6:1" id="DtX-gG-oxh"/>
+                <constraint firstAttribute="trailing" secondItem="wSX-Vj-HRI" secondAttribute="trailing" id="KPz-Yz-tXB"/>
+                <constraint firstItem="DdG-VL-TXi" firstAttribute="centerX" secondItem="wSX-Vj-HRI" secondAttribute="centerX" id="LPu-xn-dJc"/>
+                <constraint firstAttribute="bottom" secondItem="DdG-VL-TXi" secondAttribute="centerY" multiplier="6:3" id="LWt-xh-AyH"/>
+                <constraint firstItem="del-9Q-oMG" firstAttribute="centerX" secondItem="wSX-Vj-HRI" secondAttribute="centerX" id="PQQ-bg-HZ7"/>
+                <constraint firstItem="rqP-wu-GfN" firstAttribute="centerX" secondItem="wSX-Vj-HRI" secondAttribute="centerX" id="U4L-4C-dnd"/>
+                <constraint firstItem="4Jh-g7-u86" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="-2" id="Uza-rW-zyj"/>
+                <constraint firstItem="zTs-q1-Ldp" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="53" id="VYn-u7-B7W"/>
+                <constraint firstAttribute="bottom" secondItem="4Jh-g7-u86" secondAttribute="bottom" constant="152" id="VkE-1l-g64"/>
+                <constraint firstItem="i82-5v-khM" firstAttribute="centerX" secondItem="wSX-Vj-HRI" secondAttribute="centerX" id="XBt-7L-3i5"/>
+                <constraint firstItem="wSX-Vj-HRI" firstAttribute="leading" secondItem="zTs-q1-Ldp" secondAttribute="trailing" constant="67" id="XcY-ps-EZW"/>
+                <constraint firstItem="jfS-cn-kY8" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="aYM-4g-bxB"/>
+                <constraint firstAttribute="bottom" secondItem="vWo-Yr-TUd" secondAttribute="centerY" multiplier="6:2" id="fVe-vX-69W"/>
+                <constraint firstAttribute="bottom" secondItem="WER-PC-WNa" secondAttribute="bottom" id="gkF-vN-fKi"/>
+                <constraint firstAttribute="bottom" secondItem="wSX-Vj-HRI" secondAttribute="bottom" constant="-88" id="h8z-pw-o8F"/>
+                <constraint firstAttribute="bottom" secondItem="i82-5v-khM" secondAttribute="centerY" multiplier="6:5" id="kXV-AF-uRR"/>
+                <constraint firstItem="vWo-Yr-TUd" firstAttribute="centerX" secondItem="wSX-Vj-HRI" secondAttribute="centerX" id="pGN-ch-yw6"/>
+                <constraint firstItem="4Jh-g7-u86" firstAttribute="top" secondItem="1" secondAttribute="top" constant="142" id="tz0-C0-jrc"/>
+                <constraint firstAttribute="bottom" secondItem="jfS-cn-kY8" secondAttribute="bottom" id="wXr-Fy-thx"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="732" y="367"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg33.png" width="400" height="2000"/>
+        <image name="bk.jpg" width="800" height="1280"/>
+        <image name="bk1.png" width="280" height="534"/>
+        <image name="bk2.png" width="399" height="271"/>
+        <image name="bk3.png" width="460" height="414"/>
+        <image name="mnu1.png" width="267" height="269"/>
+        <image name="mnu2.png" width="267" height="269"/>
+        <image name="mnu3.png" width="267" height="269"/>
+        <image name="mnu4.png" width="267" height="269"/>
+        <image name="mnu5.png" width="267" height="269"/>
+    </resources>
+</document>
