@@ -258,6 +258,10 @@ NSUserDefaults *setting;
 
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
 
+    UIUserNotificationType *notify = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notify categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
 
 //    [self setupSibcheVars];
     return YES;
@@ -281,6 +285,12 @@ NSUserDefaults *setting;
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    PFInstallation *install = [PFInstallation currentInstallation];
+    [install setDeviceTokenFromData:deviceToken];
+    [install saveInBackground];
 }
 
 @end

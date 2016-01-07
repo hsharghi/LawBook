@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+#import <Bolts/Bolts.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
 

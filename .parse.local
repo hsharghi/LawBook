@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "LawBook": {
+      "applicationId": "yxH6BJ3dpBAaNQ0qMwvc2yg2ZyFPJR1RpMaoqjqg"
+    },
+    "_default": {
+      "link": "LawBook"
+    }
+  }
+}

@@ -25,6 +25,11 @@
 		0FBFAD841B14A121005B0328 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBFAD831B14A121005B0328 /* hide.png */; };
 		0FD82A7B1B24E03600DBD0BD /* ASIHTTPRequest in Resources */ = {isa = PBXBuildFile; fileRef = 0FD82A7A1B24E03600DBD0BD /* ASIHTTPRequest */; };
 		0FD82A7D1B24E8F500DBD0BD /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FD82A7C1B24E8F500DBD0BD /* unknown.jpg */; };
+		261E04821C3BE50E00F66730 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E047C1C3BE50E00F66730 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		261E04831C3BE50E00F66730 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E047D1C3BE50E00F66730 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		261E04871C3BE50E00F66730 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E04811C3BE50E00F66730 /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
+		261E048A1C3BF3FE00F66730 /* cloud in Resources */ = {isa = PBXBuildFile; fileRef = 261E04881C3BF3FE00F66730 /* cloud */; settings = {ASSET_TAGS = (); }; };
+		261E048B1C3BF3FE00F66730 /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261E04891C3BF3FE00F66730 /* public */; settings = {ASSET_TAGS = (); }; };
 		360AC81D1ABAC7C1007050E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 360AC81C1ABAC7C1007050E9 /* AppDelegate.m */; };
 		360AC8211ABAC816007050E9 /* BookDownload in Resources */ = {isa = PBXBuildFile; fileRef = 360AC81E1ABAC816007050E9 /* BookDownload */; };
 		360AC8221ABAC816007050E9 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 360AC8201ABAC816007050E9 /* DBManager.m */; };
@@ -249,7 +254,6 @@
 		360ACA3D1ABAD9AE007050E9 /* LibraryPage3_Portrait.xib in Resources */ = {isa = PBXBuildFile; fileRef = 360ACA3C1ABAD9AE007050E9 /* LibraryPage3_Portrait.xib */; };
 		3610A5DE1A232FA7000CA44D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3610A5DD1A232FA7000CA44D /* ImageIO.framework */; };
 		3610A5E01A232FAE000CA44D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3610A5DF1A232FAE000CA44D /* MapKit.framework */; };
-		361AB93F1A229D8000E1F90A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 361AB93E1A229D8000E1F90A /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
 		361E995E1A6BD487005BAB24 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361E995D1A6BD487005BAB24 /* Security.framework */; };
 		362E04151A1D340500B82B91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362E04141A1D340500B82B91 /* Foundation.framework */; };
 		362E04171A1D340500B82B91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362E04161A1D340500B82B91 /* CoreGraphics.framework */; };
@@ -259,7 +263,6 @@
 		362E04A21A1D3A7800B82B91 /* help.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 362E04A11A1D3A7800B82B91 /* help.pdf */; };
 		3630E7E31A1F6388005887B4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3630E7E21A1F6388005887B4 /* CoreData.framework */; };
 		3630E7E91A1F8C5F005887B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3630E7E81A1F8C5F005887B4 /* QuartzCore.framework */; };
-		363785C01A3054EA00E5B2C6 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 363785BF1A3054EA00E5B2C6 /* libz.1.dylib */; };
 		363C4AB41A58612A0070E8D7 /* BYekan.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AB11A58612A0070E8D7 /* BYekan.ttf */; };
 		366501661A2F861A00AD06DE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366501651A2F861A00AD06DE /* CFNetwork.framework */; };
 		366501681A2F863600AD06DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366501671A2F863600AD06DE /* SystemConfiguration.framework */; };
@@ -290,7 +293,11 @@
 		0FBFAD831B14A121005B0328 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide.png; sourceTree = "<group>"; };
 		0FD82A7A1B24E03600DBD0BD /* ASIHTTPRequest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ASIHTTPRequest; sourceTree = SOURCE_ROOT; };
 		0FD82A7C1B24E8F500DBD0BD /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unknown.jpg; sourceTree = "<group>"; };
-		360AC8191ABAC4BC007050E9 /* SibcheStorekit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SibcheStorekit.framework; sourceTree = "<group>"; };
+		261E047C1C3BE50E00F66730 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = parse/Bolts.framework; sourceTree = "<group>"; };
+		261E047D1C3BE50E00F66730 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = parse/Parse.framework; sourceTree = "<group>"; };
+		261E04811C3BE50E00F66730 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = parse/ParseUI.framework; sourceTree = "<group>"; };
+		261E04881C3BF3FE00F66730 /* cloud */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cloud; sourceTree = "<group>"; };
+		261E04891C3BF3FE00F66730 /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
 		360AC81B1ABAC7C1007050E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		360AC81C1ABAC7C1007050E9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		360AC81E1ABAC816007050E9 /* BookDownload */ = {isa = PBXFileReference; lastKnownFileType = file; path = BookDownload; sourceTree = "<group>"; };
@@ -603,7 +610,6 @@
 		360ACA3C1ABAD9AE007050E9 /* LibraryPage3_Portrait.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryPage3_Portrait.xib; sourceTree = "<group>"; };
 		3610A5DD1A232FA7000CA44D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3610A5DF1A232FAE000CA44D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		361AB93E1A229D8000E1F90A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		361E995D1A6BD487005BAB24 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		362E04111A1D340500B82B91 /* LawBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362E04141A1D340500B82B91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -613,14 +619,12 @@
 		362E041E1A1D340500B82B91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		362E04201A1D340500B82B91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		362E04221A1D340500B82B91 /* LawBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LawBook-Prefix.pch"; sourceTree = "<group>"; };
-		362E04361A1D340500B82B91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		362E043E1A1D340500B82B91 /* LawBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LawBookTests-Info.plist"; sourceTree = "<group>"; };
 		362E04401A1D340500B82B91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		362E04421A1D340500B82B91 /* LawBook_finalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawBook_finalTests.m; sourceTree = "<group>"; };
 		362E04A11A1D3A7800B82B91 /* help.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = help.pdf; sourceTree = "<group>"; };
 		3630E7E21A1F6388005887B4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3630E7E81A1F8C5F005887B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		363785BF1A3054EA00E5B2C6 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
 		363C4AAA1A57FE490070E8D7 /* libGPOrientation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPOrientation.a; path = "LawBook finalTests/libGPOrientation.a"; sourceTree = SOURCE_ROOT; };
 		363C4AB11A58612A0070E8D7 /* BYekan.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BYekan.ttf; sourceTree = "<group>"; };
 		366501651A2F861A00AD06DE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -643,17 +647,18 @@
 				0F0B0E371B53A5DE00021B62 /* upload-dsym.sh in Frameworks */,
 				36C76A5C1A73DC6700D3EFD0 /* CoreText.framework in Frameworks */,
 				361E995E1A6BD487005BAB24 /* Security.framework in Frameworks */,
-				363785C01A3054EA00E5B2C6 /* libz.1.dylib in Frameworks */,
+				261E04871C3BE50E00F66730 /* ParseUI.framework in Frameworks */,
 				3665016C1A2F865500AD06DE /* AdSupport.framework in Frameworks */,
 				3665016A1A2F864600AD06DE /* MobileCoreServices.framework in Frameworks */,
 				366501681A2F863600AD06DE /* SystemConfiguration.framework in Frameworks */,
 				366501661A2F861A00AD06DE /* CFNetwork.framework in Frameworks */,
 				3610A5E01A232FAE000CA44D /* MapKit.framework in Frameworks */,
 				3610A5DE1A232FA7000CA44D /* ImageIO.framework in Frameworks */,
-				361AB93F1A229D8000E1F90A /* libsqlite3.dylib in Frameworks */,
+				261E04831C3BE50E00F66730 /* Parse.framework in Frameworks */,
 				3630E7E91A1F8C5F005887B4 /* QuartzCore.framework in Frameworks */,
 				3630E7E31A1F6388005887B4 /* CoreData.framework in Frameworks */,
 				362E04171A1D340500B82B91 /* CoreGraphics.framework in Frameworks */,
+				261E04821C3BE50E00F66730 /* Bolts.framework in Frameworks */,
 				362E04191A1D340500B82B91 /* UIKit.framework in Frameworks */,
 				362E04151A1D340500B82B91 /* Foundation.framework in Frameworks */,
 			);
@@ -899,6 +904,8 @@
 				362E043C1A1D340500B82B91 /* LawBook finalTests */,
 				362E04131A1D340500B82B91 /* Frameworks */,
 				362E04121A1D340500B82B91 /* Products */,
+				261E04881C3BF3FE00F66730 /* cloud */,
+				261E04891C3BF3FE00F66730 /* public */,
 			);
 			sourceTree = "<group>";
 		};
@@ -913,29 +920,28 @@
 		362E04131A1D340500B82B91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				261E047C1C3BE50E00F66730 /* Bolts.framework */,
+				261E047D1C3BE50E00F66730 /* Parse.framework */,
+				261E04811C3BE50E00F66730 /* ParseUI.framework */,
 				0F53EBF21C305EFE00605896 /* MessageUI.framework */,
 				0F0B0E401B53A72D00021B62 /* OpenGLES.framework */,
 				0F0B0E3E1B53A69B00021B62 /* AVFoundation.framework */,
 				0F0B0E3C1B53A69100021B62 /* CoreMotion.framework */,
 				0F0B0E3A1B53A62700021B62 /* CoreMedia.framework */,
 				0F0B0E391B53A5ED00021B62 /* TestFairy */,
-				360AC8191ABAC4BC007050E9 /* SibcheStorekit.framework */,
 				36C76A5B1A73DC6700D3EFD0 /* CoreText.framework */,
 				361E995D1A6BD487005BAB24 /* Security.framework */,
-				363785BF1A3054EA00E5B2C6 /* libz.1.dylib */,
 				3665016B1A2F865500AD06DE /* AdSupport.framework */,
 				366501691A2F864600AD06DE /* MobileCoreServices.framework */,
 				366501671A2F863600AD06DE /* SystemConfiguration.framework */,
 				366501651A2F861A00AD06DE /* CFNetwork.framework */,
 				3610A5DF1A232FAE000CA44D /* MapKit.framework */,
 				3610A5DD1A232FA7000CA44D /* ImageIO.framework */,
-				361AB93E1A229D8000E1F90A /* libsqlite3.dylib */,
 				3630E7E81A1F8C5F005887B4 /* QuartzCore.framework */,
 				3630E7E21A1F6388005887B4 /* CoreData.framework */,
 				362E04141A1D340500B82B91 /* Foundation.framework */,
 				362E04161A1D340500B82B91 /* CoreGraphics.framework */,
 				362E04181A1D340500B82B91 /* UIKit.framework */,
-				362E04361A1D340500B82B91 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1369,6 +1375,7 @@
 			files = (
 				360AC83A1ABAC864007050E9 /* LoginPage.xib in Resources */,
 				360AC8441ABAC87C007050E9 /* AboutPage_Landscape.xib in Resources */,
+				261E048A1C3BF3FE00F66730 /* cloud in Resources */,
 				360ACA2A1ABACEBD007050E9 /* mnu1.png in Resources */,
 				360AC8741ABAC91A007050E9 /* ChatPage2_Portrait~ipad.xib in Resources */,
 				360AC8471ABAC87C007050E9 /* AboutPage_Portrait~ipad.xib in Resources */,
@@ -1444,6 +1451,7 @@
 				360AC8A01ABAC937007050E9 /* ShopPage3_Portrait~ipad.xib in Resources */,
 				0F834E3B1B3FF3B50058DE04 /* profile.png in Resources */,
 				360AC9C01ABACE90007050E9 /* CellMortabetin.xib in Resources */,
+				261E048B1C3BF3FE00F66730 /* public in Resources */,
 				360AC89C1ABAC937007050E9 /* ShopPage2_Portrait~ipad.xib in Resources */,
 				360AC8751ABAC91A007050E9 /* ChatPage2_Landscape~ipad.xib in Resources */,
 				360ACA001ABACEBD007050E9 /* favorite_list1.png in Resources */,
@@ -1728,6 +1736,7 @@
 					final/SibcheStorekit.embeddedframework,
 					/Users/saeid/Desktop/SibcheStorekit.embeddedframework,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/parse",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LawBook final/LawBook-Prefix.pch";
@@ -1769,6 +1778,7 @@
 					final/SibcheStorekit.embeddedframework,
 					/Users/saeid/Desktop/SibcheStorekit.embeddedframework,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/parse",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
