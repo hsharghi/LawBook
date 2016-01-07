@@ -101,13 +101,13 @@ NSMutableDictionary *_frames3;
             query = [NSString stringWithFormat:@"select (SELECT COUNT(*) FROM %@ AS t2 WHERE t2.date >= t1.date AND sub_tree = %d) from %@ AS t1 where _id = %d ORDER BY date desc", _table, self.subtree, _table, self.law_id];
             allResults = [self.dbManager2 loadDataFromDB:query];
             if (allResults.count == 0) break;
-            self.index = [allResults[0][0] integerValue]-1; //make in zero based
+            self.index = [allResults[0][0] intValue]-1; //make in zero based
             
             // list of subtree of current law
             query = [NSString stringWithFormat:@"SELECT COUNT(*) FROM %@ where sub_tree = %d", _table, self.subtree];
             allResults = [self.dbManager2 loadDataFromDB:query];
             if (allResults.count == 0) break;
-            self.count = [allResults[0][0] integerValue];
+            self.count = [allResults[0][0] intValue];
         }
             break;
             
