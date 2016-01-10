@@ -618,7 +618,7 @@
 		3610A5DD1A232FA7000CA44D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3610A5DF1A232FAE000CA44D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		361E995D1A6BD487005BAB24 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		362E04111A1D340500B82B91 /* LawBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362E04111A1D340500B82B91 /* Datta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Datta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362E04141A1D340500B82B91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		362E04161A1D340500B82B91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		362E04181A1D340500B82B91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -922,7 +922,7 @@
 		362E04121A1D340500B82B91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				362E04111A1D340500B82B91 /* LawBook.app */,
+				362E04111A1D340500B82B91 /* Datta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1336,7 +1336,7 @@
 			);
 			name = LawBook;
 			productName = "LawBook final";
-			productReference = 362E04111A1D340500B82B91 /* LawBook.app */;
+			productReference = 362E04111A1D340500B82B91 /* Datta.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1774,7 +1774,7 @@
 				OTHER_CODE_SIGN_FLAGS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arabnezhad.datta;
-				PRODUCT_NAME = LawBook;
+				PRODUCT_NAME = Datta;
 				PROVISIONING_PROFILE = "318c01f6-90bc-46a1-ba26-3b2b16eab1df";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1817,7 +1817,7 @@
 				OTHER_CODE_SIGN_FLAGS = "	";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arabnezhad.datta;
-				PRODUCT_NAME = LawBook;
+				PRODUCT_NAME = Datta;
 				PROVISIONING_PROFILE = "318c01f6-90bc-46a1-ba26-3b2b16eab1df";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;

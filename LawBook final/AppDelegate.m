@@ -246,7 +246,7 @@ NSUserDefaults *setting;
 
     
     //  Parse push service
-    [Parse setApplicationId:@"x5fBNS8KdZvn5lHwg9HAJFFSHRUKgaev0cCicDLB" clientKey:@"uM7PJ5RpHvySC9tjDmUG6Fdt0zBCmSR3bVNJgZsG"];
+    [Parse setApplicationId:@"J4qUDleqxzKq9Ny52z9uhD5HwNY6xriaci9syeJS" clientKey:@"Up55MjzWcOqBjUzV45qWkItCRa0nW3oVdPXhORz6"];
     
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes  categories:nil];
@@ -268,10 +268,16 @@ NSUserDefaults *setting;
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // sefr kardane notification ha
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:1];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
