@@ -170,48 +170,24 @@ NSUserDefaults *setting;
     [message show];
 }
 
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)remoteNotification
+{
+    // on receive notification nothing has to be done.
+    
+    NSString *remoteMessage = remoteNotification[@"aps"][@"alert"];
+    UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"سامانه هوشمند قوانین" message:remoteMessage preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *aa = [UIAlertAction actionWithTitle:@"باشه" style:UIAlertActionStyleDefault handler:nil
+                         ];
+    [ac addAction:aa];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [application.keyWindow.rootViewController presentViewController:ac animated:YES completion:nil];
+        
+    });
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// setup kardane sibche
-
-
-//- (void)setupSibcheVars {
-//    [[SibcheCentral sharedInstance] setAPIKey:[[NSArray arrayWithObjects:@"6", @"h", @"7", @"3", @"g", @"z", @"k", @"q", @"w", @"f", @"i", @"n", @"m", @"y", @"w", @"2", @"l", @"l", @"g", @"0", @"m", @"2", @"h", @"y", @"r", @"c", @"7", @"e", @"c", @"1", @"8", @"b", nil] componentsJoinedByString:@""]];
-//    NSArray *s1 = [NSArray arrayWithObjects:@"6", @"U", @"R", @"U", @"=", @"9", @"h", @"Q", @"U", @"=", @"G", @"j", @"0", @"U", @"x", @"N", @"l", @"l", @"G", @"b", @"G", @"V", @"t", @"u", nil];
-//    NSArray *s2 = [NSArray arrayWithObjects:@"Q", @"L", @"E", @"R", @"B", @"E", @"R", @"A", @"E", @"W", @"E", @"S", @"P", @"K", @"R", @"V", @"L", @"I", @"S", @"X", @"V", @"H", @"R", @"B", @"J", @"N", @"F", @"U", @"H", @"P", @"S", @"O", @"K", @"G", @"L", @"C", @"T", @"J", @"A", @"Q", @"E", @"F", @"W", @"M", @"J", @"D", @"M", @"T", nil];
-//    char aps[25];
-//    memset(aps, 0, 25);
-//    for (int i = 0; i < [s1 count]; i++) {
-//        NSString *c = [s1 objectAtIndex:i];
-//        aps[([[s2 objectAtIndex:i * 2 + 1] characterAtIndex:0] - 'A')] = [c characterAtIndex:0];
-//    }
-//    [[SibcheCentral sharedInstance] setAPIPassword:[NSString stringWithUTF8String:aps]];
-//}
-//
 
 // URL Handler is required to continue the purchase process for Sibche
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
@@ -240,6 +216,20 @@ NSUserDefaults *setting;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    NSDictionary *remoteNotification = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (remoteNotification) {
+        // on receive notification
+        NSString *remoteMessage = remoteNotification[@"aps"][@"alert"];
+        UIAlertController *ac = [UIAlertController alertControllerWithTitle:@"سامانه هوشمند قوانین" message:remoteMessage preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *aa = [UIAlertAction actionWithTitle:@"باشه" style:UIAlertActionStyleDefault handler:nil
+                             ];
+        [ac addAction:aa];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [application.keyWindow.rootViewController presentViewController:ac animated:YES completion:nil];
+            
+        });
+    }
 
     
 //    [TestFairy begin:@"d5bc8f21eee62068f09fbbb4b1a6018925f6c8b2"];
@@ -258,11 +248,21 @@ NSUserDefaults *setting;
 
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
 
-    UIUserNotificationType *notify = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
-    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notify categories:nil];
+//    UIUserNotificationType *notify = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
+//    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notify categories:nil];
+//    [application registerUserNotificationSettings:settings];
+//    [application registerForRemoteNotifications];
+
+    
+    //  Parse push service
+    [Parse setApplicationId:@"x5fBNS8KdZvn5lHwg9HAJFFSHRUKgaev0cCicDLB" clientKey:@"uM7PJ5RpHvySC9tjDmUG6Fdt0zBCmSR3bVNJgZsG"];
+    
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes  categories:nil];
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
 
+    
 //    [self setupSibcheVars];
     return YES;
 

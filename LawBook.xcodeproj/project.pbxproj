@@ -25,11 +25,14 @@
 		0FBFAD841B14A121005B0328 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FBFAD831B14A121005B0328 /* hide.png */; };
 		0FD82A7B1B24E03600DBD0BD /* ASIHTTPRequest in Resources */ = {isa = PBXBuildFile; fileRef = 0FD82A7A1B24E03600DBD0BD /* ASIHTTPRequest */; };
 		0FD82A7D1B24E8F500DBD0BD /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FD82A7C1B24E8F500DBD0BD /* unknown.jpg */; };
-		261E04821C3BE50E00F66730 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E047C1C3BE50E00F66730 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		261E04831C3BE50E00F66730 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E047D1C3BE50E00F66730 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		261E04871C3BE50E00F66730 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E04811C3BE50E00F66730 /* ParseUI.framework */; settings = {ASSET_TAGS = (); }; };
-		261E048A1C3BF3FE00F66730 /* cloud in Resources */ = {isa = PBXBuildFile; fileRef = 261E04881C3BF3FE00F66730 /* cloud */; settings = {ASSET_TAGS = (); }; };
-		261E048B1C3BF3FE00F66730 /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261E04891C3BF3FE00F66730 /* public */; settings = {ASSET_TAGS = (); }; };
+		0FEFDB741C3E71450054BB55 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEFDB731C3E71450054BB55 /* libsqlite3.tbd */; };
+		0FEFDB781C3E71C20054BB55 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEFDB771C3E71C20054BB55 /* AudioToolbox.framework */; };
+		0FEFDB7A1C3E72330054BB55 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEFDB791C3E72330054BB55 /* libz.tbd */; };
+		261E04821C3BE50E00F66730 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E047C1C3BE50E00F66730 /* Bolts.framework */; };
+		261E04831C3BE50E00F66730 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E047D1C3BE50E00F66730 /* Parse.framework */; };
+		261E04871C3BE50E00F66730 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261E04811C3BE50E00F66730 /* ParseUI.framework */; };
+		261E048A1C3BF3FE00F66730 /* cloud in Resources */ = {isa = PBXBuildFile; fileRef = 261E04881C3BF3FE00F66730 /* cloud */; };
+		261E048B1C3BF3FE00F66730 /* public in Resources */ = {isa = PBXBuildFile; fileRef = 261E04891C3BF3FE00F66730 /* public */; };
 		360AC81D1ABAC7C1007050E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 360AC81C1ABAC7C1007050E9 /* AppDelegate.m */; };
 		360AC8211ABAC816007050E9 /* BookDownload in Resources */ = {isa = PBXBuildFile; fileRef = 360AC81E1ABAC816007050E9 /* BookDownload */; };
 		360AC8221ABAC816007050E9 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 360AC8201ABAC816007050E9 /* DBManager.m */; };
@@ -293,6 +296,10 @@
 		0FBFAD831B14A121005B0328 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hide.png; sourceTree = "<group>"; };
 		0FD82A7A1B24E03600DBD0BD /* ASIHTTPRequest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ASIHTTPRequest; sourceTree = SOURCE_ROOT; };
 		0FD82A7C1B24E8F500DBD0BD /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unknown.jpg; sourceTree = "<group>"; };
+		0FEFDB731C3E71450054BB55 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0FEFDB751C3E716B0054BB55 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0FEFDB771C3E71C20054BB55 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0FEFDB791C3E72330054BB55 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		261E047C1C3BE50E00F66730 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = parse/Bolts.framework; sourceTree = "<group>"; };
 		261E047D1C3BE50E00F66730 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = parse/Parse.framework; sourceTree = "<group>"; };
 		261E04811C3BE50E00F66730 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = parse/ParseUI.framework; sourceTree = "<group>"; };
@@ -639,6 +646,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FEFDB7A1C3E72330054BB55 /* libz.tbd in Frameworks */,
+				0FEFDB781C3E71C20054BB55 /* AudioToolbox.framework in Frameworks */,
+				0FEFDB741C3E71450054BB55 /* libsqlite3.tbd in Frameworks */,
 				0F53EBF31C305EFE00605896 /* MessageUI.framework in Frameworks */,
 				0F0B0E411B53A72D00021B62 /* OpenGLES.framework in Frameworks */,
 				0F0B0E3F1B53A69B00021B62 /* AVFoundation.framework in Frameworks */,
@@ -920,6 +930,10 @@
 		362E04131A1D340500B82B91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FEFDB791C3E72330054BB55 /* libz.tbd */,
+				0FEFDB771C3E71C20054BB55 /* AudioToolbox.framework */,
+				0FEFDB751C3E716B0054BB55 /* CoreAudio.framework */,
+				0FEFDB731C3E71450054BB55 /* libsqlite3.tbd */,
 				261E047C1C3BE50E00F66730 /* Bolts.framework */,
 				261E047D1C3BE50E00F66730 /* Parse.framework */,
 				261E04811C3BE50E00F66730 /* ParseUI.framework */,
@@ -1346,6 +1360,9 @@
 							com.apple.Maps.iOS = {
 								enabled = 0;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -1726,8 +1743,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hadi Arabnejad Khanouki (83QW75PR8S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hadi Arabnejad Khanouki (83QW75PR8S)";
 				"CODE_SIGN_RESOURCE_RULES_PATH[sdk=*]" = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1758,7 +1775,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arabnezhad.datta;
 				PRODUCT_NAME = LawBook;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "318c01f6-90bc-46a1-ba26-3b2b16eab1df";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1769,8 +1786,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hadi Arabnejad Khanouki (83QW75PR8S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hadi Arabnejad Khanouki (83QW75PR8S)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1801,7 +1818,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arabnezhad.datta;
 				PRODUCT_NAME = LawBook;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "318c01f6-90bc-46a1-ba26-3b2b16eab1df";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
