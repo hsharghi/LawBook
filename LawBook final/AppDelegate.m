@@ -232,7 +232,6 @@ NSUserDefaults *setting;
     }
 
     
-//    [TestFairy begin:@"d5bc8f21eee62068f09fbbb4b1a6018925f6c8b2"];
 
 
     // sefr kardane notification ha
