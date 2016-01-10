@@ -248,11 +248,6 @@ NSUserDefaults *setting;
 
     [application setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
 
-//    UIUserNotificationType *notify = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
-//    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notify categories:nil];
-//    [application registerUserNotificationSettings:settings];
-//    [application registerForRemoteNotifications];
-
     
     //  Parse push service
     [Parse setApplicationId:@"x5fBNS8KdZvn5lHwg9HAJFFSHRUKgaev0cCicDLB" clientKey:@"uM7PJ5RpHvySC9tjDmUG6Fdt0zBCmSR3bVNJgZsG"];
