@@ -192,10 +192,7 @@ NSUserDefaults *setting;
 // URL Handler is required to continue the purchase process for Sibche
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
 
-//    if ([[SibcheCentral sharedInstance] urlIsForMicropayment:url]) {
-//        [self setupSibcheVars];
-//        return [[SibcheCentral sharedInstance] sibcheHandleOpenURL:url];
-//    }
+
     return YES;
 }
 
