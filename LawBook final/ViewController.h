@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-- (void)notifi;
 
 - (IBAction)Chat:(UIButton *)sender;
 
@@ -21,9 +20,6 @@
 
 - (IBAction)Library:(UIButton *)sender;
 
-- (IBAction)Register:(UIButton *)sender;
-
-- (IBAction)Buy:(UIButton *)sender;
 
 @property NSString *is_registered;
 @property(weak, nonatomic) IBOutlet UIButton *shopbookbtn;

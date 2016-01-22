@@ -626,7 +626,7 @@ NSString *ms;
         NSString *postString = [[NSString stringWithFormat:@"%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@", @"IMEI=", imei, @"&Email=", Email_R, @"&Username=", Username_R, @"&Name=", Name_R, @"&Family=", Family_R, @"&Mobile=", Mobile_R, @"&Field=", Field_R, @"&Degree=", Degree_R, @"&City=", City_R, @"&Job=", Job_R, @"&image=", (jpgImage == nil ? @"" : jpgImage)] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         
         NSURL *postURL = [NSURL URLWithString:(self.viewProfile ? @"http://intelligent-book.ir/Account/EditProfile" : @"http://intelligent-book.ir/Account/Register2")];
-        
+
         
         NSMutableURLRequest *postRequest = [NSMutableURLRequest requestWithURL:postURL
                                                                cachePolicy:NSURLRequestUseProtocolCachePolicy
